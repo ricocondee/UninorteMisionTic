@@ -3,4 +3,4 @@ Desarrollo web impartido por [Uninorte](https://www.uninorte.edu.co/) Gracias a 
 > Tengo grades expectativas respecto a este programa de formacion, espero poder adquirir los conocimientos necesarios para encontrar trabajo como programador. 
 > - Emanuel Rico Conde
 
-## Estare subiendo el codigo aprendido a este repositorio, una vez se hayan calificado.
+## Estare subiendo el codigo aprendido a este repositorio, una vez se haya calificado.
