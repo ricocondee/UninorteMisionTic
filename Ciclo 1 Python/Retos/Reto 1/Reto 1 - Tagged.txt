@@ -1,0 +1,82 @@
+RETO 1
+Nombre del reto:
+
+Detección Temprana de Enfermedades no Transmisible de un
+Paciente
+
+Autor reto:
+
+Eduardo David Angulo Madrid
+Descripción del reto con su respectiva solución:
+
+En el año 2015, los líderes mundiales adoptaron un conjunto de objetivos globales para
+erradicar la pobreza, proteger el planeta y asegurar la prosperidad para todos como
+parte de una nueva agenda de desarrollo sostenible. Uno de estos objetivos es el de
+salud y bienestar y una de sus metas busca reducir en un tercio la mortalidad prematura
+por enfermedades no transmisibles mediante la prevención y el tratamiento.
+Debido a esto, el ministerio de salud desea que usted construya un sistema para la
+detección temprana de una enfermedad en específico, siendo estas la hipertensión y la
+hipotensión, en pos del mejoramiento de la calidad de vida de los ciudadanos.
+Para ello, el sistema debe recibir como entrada los datos de la presión sistólica y la
+presión diastólica de un paciente y muestre por pantalla la categoría en la que se
+encuentra la presión del paciente, así como el tipo de alerta que se genera
+dependiendo de la categoría mencionada previamente.
+Los rangos de valores de presión, así como su categoría y alerta se listan en la
+siguiente tabla:
+_______________________________________________________________________________________________
+|Presión Sistólica | Presión Diastólica|          Categoría             |        Alerta       |
+_______________________________________________________________________________________________
+|     < 72         |      < 65         |          Hipotension           |        Amarilla     |
+_______________________________________________________________________________________________
+|   [72 - 107)     |    [65 - 73]      |            Optima              |         Verde       |
+_______________________________________________________________________________________________
+|   [107 - 124)    |    [73 - 81]      |            Normal              |         Verde       |
+_______________________________________________________________________________________________
+|   [124 - 138)    |    [81 - 93]      |        Prehipertension         |        Amarilla     |
+_______________________________________________________________________________________________
+|   [138 - 156)    |    [93 - 102)     |          HTA Grado 1           |        Naranja      |
+_______________________________________________________________________________________________
+|   [156 - 175)    |    [102 - 114)    |          HTA Grado 2           |         Roja        |
+_______________________________________________________________________________________________
+|     ≥ 175        |       ≥ 114       |          HTA Grado 3           |         Roja        |
+_______________________________________________________________________________________________
+|     ≥ 136        |       < 92        | Hipertension Sistolica Aislada |        Naranja      |
+_______________________________________________________________________________________________
+
+
+Además, para cualquier combinación no válida de los valores de ambas presiones se
+debe mostrar el mensaje “No se puede determinar la categoria”, así como una alerta de
+color gris.
+
+Entrada Esperada
+71 60
+103 70
+185 120
+180 103
+
+
+Salida Esperada
+Hipotension Alerta Amarilla
+Optima Alerta Verde
+HTA Grado 3 Alerta Roja
+No se puede determinar la categoria Alerta Gris
+
+Nota: Ten en cuenta que cada variable debe ser manejada como una entrada diferente.
+A continuación, ejemplificamos cómo debes hacerlo y cómo no.
+
+
+No lo hagas así:
+var_1 = valor1 valor2
+
+
+
+Hazlo así:
+var_1 = valor1
+var_2 = valor2
+
+Nota: Las tildes y cualquier otro signo ortográfico han sido omitidos a propósito en las
+entradas y salidas del programa. Por favor NO use ningún signo dentro del
+desarrollo de su solución ya que estos pueden representar errores en la calificación
+automática de Codegrade.
+
+
