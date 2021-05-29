@@ -76,19 +76,27 @@ actividad2() """
 #Escribe el código para dos numeros a y b, el usuario va a seleccionar una opcion: 
         #1 para sumar, 2 para multiplicar, 3 para restar (a-b) y 4 para dividir (a/b) y 
         #retornar el resultado de la operación indicada.
-numa = int(input("Ingresa el numero a: "))
-numb = int(input("Ingresa el numero b: "))
-opcion = int(input("\n   Opciones\nSumar [1]\nMultiplicar [2]\nRestar [3]\nElige una opcion: "))
+
 def actividad3():
-    if opcion == 1:
-        result = numa+numb
-        print(f"{numa}+{numb} = {result}")
-    else:
-        if opcion == 2:
-            result = numa*numb
-            print(f"{numa}x{numb} = {result}")
+    numa = int(input("Ingresa el numero a: "))
+    numb = int(input("Ingresa el numero b: "))
+    suma = numa+numb
+    multi = numa*numb
+    resta = numa-numb
+    div = numa/numb
+    def menu():
+        opcion = int(input("\n   Opciones\nSumar [1]\nMultiplicar [2]\nRestar [3]\nDividir [4]\nElige una opcion: "))
+        if opcion == 1:
+           print(f"{numa} + {numb}: = {suma}")
+        elif opcion == 2:
+           print(f"{numa} x {numb}: = {multi}")
+        elif opcion == 3:
+            print(f"{numa} - {numb}: = {resta}")
+        elif opcion == 4:
+            print(f"{numa} ÷ {numb}: = {round(div,2)}")
         else:
-            if opcion == 3:
-                result = numa-numb
-                print(f"{numa}-{numb} = {result}")
+            print("Escoge una opcion valida")
+    menu()
+
 actividad3()
+    

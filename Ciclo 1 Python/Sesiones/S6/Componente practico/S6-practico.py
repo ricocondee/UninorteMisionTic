@@ -9,24 +9,54 @@
 #   
 # Luego crea un menú con las tres opciones.
 
-def funcion1():
-    num = int(input("Cifra: "))
-    if num % 10:
-        num = num % 1000 and num % 100 and num %10
-        num2 = num
-        print(f"El mayor dígito es {num2}" ) 
-funcion1()
-
-""" def funcion2():
-    #Escribe el código de la segunda opción aquí
-    print("El nuevo dígito es " )
-
-def funcion3():
-    #Escribe el código de la tercera opción aquí
-    print("El nuevo dígito es ")
-
-if __name__ == "__main__":
-    #Escribe el código aquí para que el usuario seleccione una opción. Llamas cada opción como
-    #funcion1()
-    #funcion2()
-    #funcion3() """
+def menu():
+    opcion = int(input(""""
+                    _______________________________________
+                   |               OPCIONES                |
+                   |_______________________________________|
+                   | 1. Mayor numero y si es par o impar   |
+                   |_______________________________________|
+                   | 2. Numero formado con el mayor y menor|
+                   |_______________________________________|
+                   | 3. Maximo numero posible              |
+                   |_______________________________________|
+                   | Elije una opcion: | """))
+    print()
+    if opcion == 1:
+        def mayor(x):
+            num = []
+            for i in x:
+                num.append(int(i))
+            if max(num) % 2 == 0:
+                print(f"El mayor numero es: {max(num)}, y es par.")
+            else:
+                print(f"El mayor numero es: {max(num)}, y es impar.")
+        cif = input("Numero de cuatro digitos: ")
+        mayor(cif)
+    elif opcion == 2:
+        def tres(y):
+            tres1 = []
+            tres2 = []
+            for i in y:
+                tres1.append(int(i))
+            for j in num2:
+                tres2.append(int(j))
+            print(f"El nuevo numero es: {max(tres1)}{min(tres2)}")
+        num = input("Numero de tres digitos:")
+        num2 = input("Otro numero de tres digitos: ")
+        tres(num)
+    elif opcion == 3:
+        def maxpo():  
+            num = input("Numero de tres digitos: ")
+            num = list(num)
+            numlst = list()
+            for i in range(3):
+                maxi = num.index(max(num))
+                numlst.append(num[maxi])
+                num.pop(maxi)
+            maxnumpo = int(numlst[0]+ numlst[1]+ numlst[2])
+            print(f"Nuevo numero {maxnumpo}")
+        maxpo()
+    else:
+        print("Ingresa una opcion valida")
+menu()
