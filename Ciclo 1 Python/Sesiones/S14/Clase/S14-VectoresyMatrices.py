@@ -1,5 +1,5 @@
 #Multiplicacion de matrices
-""" n = int(input("filas:"))
+n = int(input("filas:"))
 m = int(input("Columna 2: "))
 o = int(input("Columna 2: "))
 
@@ -28,14 +28,13 @@ for i in range(n):
     r = []
     for j in range (o):
         r.append(c[i][j])
-    print(r) """
-
+    print(r)
 
 #Ejercicio 1
 #Dada una matriz cuadrada A, construya un algoritmo que permita determinar si dicha matriz es simétrica.
 #Se considera a una matriz simétrica si A[i,j] = A[j,i] y esto se cumple para todos los elementos i,j de la matriz
 
-matrix = []
+""" matrix = []
 n = int(input("Tamaño de la matriz: "))
 if (1 <= n and n <= 100):
     for i in range(n):
@@ -58,14 +57,14 @@ if (1 <= n and n <= 100):
     else:
         print("La matriz no es simetrica")
 else:
-    print("La dimension de la matriz no es correcta")
+    print("La dimension de la matriz no es correcta") """
 
 
 #Ejercicio 2
 #Haga un algoritmo que calcule el producto escalar y vectorial de dos dos vectores de 3 elementos cuyos valores se
 #introducen por pantalla.
 
-a = 3*[0]
+""" a = 3*[0]
 b = [0]*3
 
 for i in range(3):
@@ -80,4 +79,4 @@ print("El producto escalar es: ", suma)
 x = a[1]*b[2] - a[2]*b[1]
 y = -(a[0]*b[2] - a[2]*b[0])
 z = a[0]*b[1] - a[1]*b[0]
-print("El producto vectorial es: {}i {}j {}k".format(x, y, z))
+print("El producto vectorial es: {}i {}j {}k".format(x, y, z)) """
