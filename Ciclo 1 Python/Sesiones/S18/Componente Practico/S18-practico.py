@@ -23,25 +23,10 @@
 # primeria línea y "Segunda línea". Guardalo en la carpeta donde esta almacenado este archivo de python. 
 # Ahora vamos a leer la información del archivo usando la función read().
 
-def leermatriz():
-    matrizasig = []
-    filaasig = []
-    archivomatriz = open("C:/Users/User/Desktop/sesion18/matrizAsignacion.txt")
-    
-    datosmatriz = archivomatriz.readline()
-    fila = datosmatriz.rstrip('\n').split(',')
-    filaasig.append(fila)
-    matrizasig.append(filaasig)
-    
-    while datosmatriz:
-        
-        datosmatriz = archivomatriz.readline()
-        fila = datosmatriz.rstrip('\n').split(',')
-        matrizasig.append(fila)
-        
-    for i in matrizasig:
-        print(i)
-leermatriz()
+def archivospython():
+    archivo = open("F:/UninorteMisionTic/Ciclo 1 Python/Sesiones/S18/Clase/miarchivo.txt", 'r')
+    texto = archivo.read()
+    print(texto)
 
 
 
@@ -66,3 +51,23 @@ leermatriz()
 #como la que veníamos trabajando. 
 #
 #Finalmente vamos a imprimir la matriz.
+
+def leermatriz():
+    matrizasig = []
+    filaasig = []
+    archivomatriz = open("C:/Users/ricoc/Desktop/UninorteMisionTic/Ciclo 1 Python/Sesiones/S18/Componente Practico/matrizAsignacion.txt")
+    
+    datosmatriz = archivomatriz.readline()
+    fila = datosmatriz.rstrip('\n').split(',')
+    filaasig.append(fila)
+    matrizasig.append(filaasig)
+    
+    while datosmatriz:
+        
+        datosmatriz = archivomatriz.readline()
+        fila = datosmatriz.rstrip('\n').split(',')
+        matrizasig.append(fila)
+        
+    for i in matrizasig:
+        print(i)
+leermatriz()
