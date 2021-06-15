@@ -1,0 +1,68 @@
+Sesión # 20: Componente Práctico
+
+Python también cuenta con librerías adicionales para el manejo de archivos. Entre ellos se incluyen la librería pandas e incluso la librería csv exclusiva para archivos separados por comas. Vamos a ver ejemplos usando estas librerías.
+
+En este caso vamos a leer la información de un archivo matrizAsignacion.csv e imprimirlo.
+
+import csv
+
+def testCSV():
+    archivo =  open('matrizAsignacion.csv', mode='r', encoding='utf-8-sig' ) 
+    lector = csv.reader(archivo) #Retorna un objeto con las filas del csv
+    
+    for fila in lector: #Este va a recorrer cada fila
+        print(fila)
+        for i in fila:  #Este recorre cada valor en cada fila [i] representa cada elemento separado por ,
+             print(i)
+
+testCSV()
+
+
+Como vemos, esta librería nos permite recorrer el archivo y los valores en un csv sin necesidad de separar los valores. CSV también cuenta con una opción para escribir un archivo. Vamos ahora a leer el archivo y escribirlo en otro archivo adicionando una columna al final con el valor "Nuevo".
+
+import csv
+
+def testIOcsv():
+    archivo =  open('matrizAsignacion.csv', mode='r', encoding='utf-8-sig' ) 
+    nuevoArchivo = open('archivoResultado.csv', mode='w', encoding='utf-8-sig' )
+    
+    lector = csv.reader(archivo) #Retorna un objeto con las filas del csv para ser leidas
+     
+    escritor = csv.writer(nuevoArchivo) #Retorna un objeto para escribir en csv
+    
+    for fila in lector: #Este va a recorrer cada fila del lector (Trabaja como una lista)
+        fila.append("Nuevo")
+        escritor.writerow(fila) # Este escribe cada fila en
+
+testIOcsv()
+
+Actividades: 
+Ejercicio 1
+En este ejercicio deberás crear un script llamado personas.py que lea los datos de un archivo de texto, que transforme cada fila en un diccionario y lo añada a una lista llamada personas. Luego recorra las personas 
+transforme cada fila en un diccionario y lo añada a una lista llamada personas. Luego recorra las personas 
+de la lista y para cada una muestra de forma amigable todos sus campos.
+El archivo de texto se denominará personas.txt y tendrá el siguiente contenido en texto plano (créalo 
+previamente):
+1;Carlos;Pérez;05/01/1989 
+2;Manuel;Heredia;26/12/1973 
+3;Rosa;Campos;12/06/1961 
+4;David;García;25/0712006
+Los campos del diccionario serán por orden:
+id, nombre, apellido y nacimiento.
+
+
+
+Ejercicio 2
+En este ejercicio deberás crear un script llamado contador.py que realice varias tareas sobre un archivo llamado
+contador.txt que almacenará un contador de visitas (será un número):
+
+El script trabajará sobre el archivo contador.txt. Si el archivo no existe o se encuentra vacío lo crearemos con el
+número O. Si existe simplemente leeremos el valor del contador.
+
+Luego a partir de un argumento:
+• Si se envía el argumento inc, se incrementará el contador en uno y se mostrará por pantalla.
+• Si se envia el argumento dec, se decrementará el contador en uno y se mostrará por pantalla.
+• Si no se envía ningún argumento (o algo que no sea inc o   dec). se mostrará el valor del contador por pantalla.
+
+Finalmente guardará de nuevo el valor del contador de nuevo en el archivo.
+Utiliza excepciones si crees que es necesario, puedes mostrar el mensaje: Error: Archivo corrupto
