@@ -83,12 +83,10 @@ Salida Esperada
 
 Nota: Ten en cuenta que cada variable debe ser manejada como una entrada diferente.
 A continuación, ejemplificamos cómo debes hacerlo y cómo no.
-
 
 No lo hagas así:
 var_1 = valor1 valor2
 
-
 
 Hazlo así:
 var_1 = valor1
