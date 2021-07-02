@@ -1,3 +1,5 @@
+package Ciclo2Java.Sesiones.S1.Clase.src;
+
 //Programa que lea una cantidad de grados centigrados y la pase a grados farenheigth
 //la formula correspondiente para pasar de C a F es: r = 32 + (9 * c / 5)
 

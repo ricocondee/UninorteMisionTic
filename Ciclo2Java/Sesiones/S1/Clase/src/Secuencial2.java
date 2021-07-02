@@ -1,3 +1,5 @@
+package Ciclo2Java.Sesiones.S1.Clase.src;
+
 import java.util.Scanner;
 
 //Dados los catetos de un triangulo, calcular la hipotenusa

@@ -1,3 +1,5 @@
+package Ciclo2Java.Sesiones.S1.Clase.src;
+
 import java.util.Scanner;
 public class Condicionales2 {
     public static void main(String[] args) throws Exception {
