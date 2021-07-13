@@ -1,3 +1,5 @@
+package Ciclo2Java.Sesiones.S3.Clase.src;
+
 //introduccion a matrices
 import java.util.Scanner;
 public class Matrices {
