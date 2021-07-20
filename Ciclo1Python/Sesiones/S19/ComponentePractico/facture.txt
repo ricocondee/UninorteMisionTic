@@ -1,0 +1,6 @@
+Producto: Macbook Pro 2021
+ Precio: $3000
+Producto: SSD Kingston 240GB
+ Precio: $35
+Producto: Dell XPS 19
+ Precio: $1500
