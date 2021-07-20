@@ -1,1 +1,0 @@
-El componente practico de la sesion 4 fue descargar e instalar Visual Studio Code.
