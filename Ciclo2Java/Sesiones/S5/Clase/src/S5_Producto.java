@@ -9,7 +9,7 @@ public class S5_Producto {
     public S5_Producto(){
 
     }
-            //se puede usar solo un atributo en el constructor
+            // tambien se puede usar solo un atributo en el constructor
     public S5_Producto(int codigo, int precioCompra, int cantidadBodega, int cantidadMinima){
         this.codigo = codigo;
         this.precioCompra = precioCompra;
