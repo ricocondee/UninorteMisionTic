@@ -1,0 +1,86 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "java",
+            "name": "Launch JavaFx",
+            "request": "launch",
+            "vmArgs": "--module-path C:/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "JavaFx",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClasesAbstractas",
+            "request": "launch",
+            "mainClass": "ClasesAbstractas",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch HerenciaMultiple",
+            "request": "launch",
+            "mainClass": "HerenciaMultiple",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch InstanceOf",
+            "request": "launch",
+            "mainClass": "InstanceOf",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch S10_Practico",
+            "request": "launch",
+            "mainClass": "S10_Practico",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch S3_Practico",
+            "request": "launch",
+            "mainClass": "S3_Practico",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch S7_ContinuacionPOO",
+            "request": "launch",
+            "mainClass": "S7_ContinuacionPOO",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch S8_Paquetes",
+            "request": "launch",
+            "mainClass": "S8_Paquetes",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch S8_otraClase",
+            "request": "launch",
+            "mainClass": "S8_otraClase",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        }
+    ]
+}
