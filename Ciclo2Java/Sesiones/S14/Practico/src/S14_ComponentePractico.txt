@@ -1,0 +1,29 @@
+Sesión # 14: Componente Práctico
+
+
+En base al proyecto creado en el componente práctico de la sesión 13:
+
+1. Añadir un nuevo componente label con id ‘mensajeError’ y text vacío. Ubicarlo debajo de botón ‘Iniciar sesión’
+
+2. Desde LoginController en el proyecto Java, instanciar variables de GUI y crear evento onAction con nombre login del componente loginButton
+
+3. Al hacer click sobre botón ‘Iniciar sesión’ se debe acceder al evento implementado en el paso 2 y obtener mediante el método GET los valores ingresados por el usuario en text fields: username y password
+
+4. Crear las siguientes validaciones en el evento login para los campos:
+a. Usuario 
+- El dato obtenido no debe contener la palabra prueba. En caso de que esta condición no se cumpla se debe guardar en una constante ‘error’ el siguiente mensaje: ‘Usuario no válido’
+b. Contraseña
+- El input obtenido debe tener un tamaño mínimo de 6 caracteres, en caso de recibir menos de esta cantidad se debe guardar en una constante ‘error’ el siguiente mensaje: ‘Contraseña debe contar con más de 6 caracteres. Intente nuevamente’.
+- El input obtenido debe ser diferente al recibido en el campo usuario. En caso de que sean iguales, se debe guardar en una constante ‘error’ el siguiente mensaje: ‘Contraseña no puede ser igual a usuario. Intente nuevamente.’
+
+5. En caso de que se cumpla alguna de las condiciones para errores, es decir, que la constante ‘error’ tenga un mensaje, se debe aplicar el método SET en label ‘mensajeError’ con su contenido. En caso de que no ocurra ningún error, redirigir a una nueva vista (ventana) llamada ‘Inicio’
+
+6. Añadir a la nueva vista creada un label con el mensaje ‘Bienvenido(a) a Almacén ___’. El controlador de la vista creada debe llevar por nombre InicioController
+
+Tener en cuenta:
+
+1. Guardar directamente en la carpeta src del proyecto imágenes o elementos externos que se requieran para la GUI.
+2. En caso de no tener claros los pasos a seguir para la creación de una aplicación con GUI ver documento de instrucciones y video tutorial.
+3. Leer documento de instrucciones para la creación de múltiples vistas en un proyecto.
+
+
