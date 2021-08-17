@@ -4,13 +4,34 @@
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
         {
             "type": "java",
-            "name": "Launch JavaFx",
+            "name": "Launch Reto2",
+            "request": "launch",
+            "mainClass": "Reto2",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Reto3",
             "request": "launch",
             "vmArgs": "--module-path C:/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
-            "mainClass": "JavaFx",
+            "mainClass": "Reto3",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch S14_Practico",
+            "request": "launch",
+            "vmArgs": "--module-path C:/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "S14_Practico",
             "projectName": "Ciclo2Java_a9a22bf9"
         },
         {
@@ -18,6 +39,30 @@
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch LoginBD",
+            "request": "launch",
+            "vmArgs": "--module-path C:/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "LoginBD",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Calculadora",
+            "request": "launch",
+            "vmArgs": "--module-path C:/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "Calculadora",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch JavaFx",
+            "request": "launch",
+            "vmArgs": "--module-path C:/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "JavaFx",
+            "projectName": "Ciclo2Java_a9a22bf9"
         },
         {
             "type": "java",

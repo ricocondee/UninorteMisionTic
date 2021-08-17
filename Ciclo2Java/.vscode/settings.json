@@ -3,14 +3,17 @@
         "Sesiones/S8/Clase/src",
         "Sesiones/S7/Clase/src",
         "Sesiones/S3/Practico",
+        "Sesiones/S15/Clase/src",
+        "Sesiones/S14/Practico/src",
+        "Sesiones/S14/Clase/src",
+        "Sesiones/S13/Clase/src",
         "Sesiones/S12/Interface/src",
         "Sesiones/S12/InstaceOf/src",
         "Sesiones/S12/Clase/src",
-        "Sesiones/S12/Clase/Interface/src",
-        "Sesiones/S12/Clase/InstaceOf/src",
         "Sesiones/S11/Clase/src",
         "Sesiones/S10/Clase/src",
-        "Sesiones/S13/Clase/src"
+        "Retos/Reto2/src",
+        "Retos/Reto3/src"
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
