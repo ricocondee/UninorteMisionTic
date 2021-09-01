@@ -6,6 +6,37 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch S17_TestJunit",
+            "request": "launch",
+            "mainClass": "S17_TestJunit",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch S16_Practico",
+            "request": "launch",
+            "vmArgs": "--module-path C:/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "S16_Practico",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch S19_MVC",
+            "request": "launch",
+            "vmArgs": "--module-path C:/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "S19_MVC",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch S15_Practico",
+            "request": "launch",
+            "vmArgs": "--module-path C:/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "S15_Practico",
+            "projectName": "Ciclo2Java_a9a22bf9"
+        },
+        {
+            "type": "java",
             "name": "Launch Reto2",
             "request": "launch",
             "mainClass": "Reto2",
