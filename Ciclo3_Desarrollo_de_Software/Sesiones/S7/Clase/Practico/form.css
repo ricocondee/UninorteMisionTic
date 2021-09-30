@@ -41,7 +41,7 @@ form{
     margin-bottom: 15%;
 }
 
-button{
+input[type="submit"], input[type="reset"]{
     text-align: center;
     font-weight: bold;
 }
@@ -70,7 +70,6 @@ label[for="btn"]{
     background-size: 24px 24px;
     width: 24px;
     height: 24px;
-    position: fixed; left: 275px; top:243px;
     background-attachment: inherit;
     
 }
@@ -85,7 +84,7 @@ input[id="btn"]:checked ~ label[for="btn"]{
 }
 
 .showPasswordBtn{
-    position: fixed; left: 275px; top:243px;
+    position: fixed; left: 275px; top:237px;
 }
 
 #btn{
