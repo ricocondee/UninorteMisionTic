@@ -1,2 +1,8 @@
 *.pdf
 *.log
+*.cfg
+SQLiteStudio/
+__pycache__/
+Lib/
+Scripts/
+Include/
