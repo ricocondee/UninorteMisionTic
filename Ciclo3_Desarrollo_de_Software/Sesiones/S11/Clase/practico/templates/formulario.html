@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Formulario de registro</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../static/css/form.css" </head>
+
+<body>
+    {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+    {% endfor %}
+    <div class="title">
+        <h1>REGISTRO PARA VACUNACION COVID-19</h1>
+    </div>
+    <div class="formulario">
+        <form action="register" method="POST" name="register">
+
+            <label>Nombre:</label> <input type="text" />
+            <br />
+            <br />
+            <label>Usuario:</label> <input type="text" id="username" required minlength="8" />
+            <br />
+            <br />
+            <label>Genero:</label> Masculino<input type="radio" name="Genero" />
+            Femenino<input type="radio" name="Genero" />
+            <br />
+            <br />
+            <label>Correo:</label> <input type="email" id="email" />
+            <br />
+            <label>Contraseña:</label>
+            <input type="password" id="password" required minlength="8" />
+            <div class="showPasswordBtn">
+                <input type="checkbox" name="btn" id="btn" onclick="showPassword()"></input>
+                <label for="btn"></label>
+            </div>
+            <br />
+            <br />
+            <label for="Cargo">Rol en el equipo:</label>
+            <select id="roll" name="Cargo">
+                <option value="" selcted>Selecciona</option>
+                <option value="">Programador</option>
+                <option value="">Analista</option>
+                <option value="">Soporte Tecnico</option>
+                <option value="">Otro</option>
+            </select>
+            <br />
+            <br />
+            <input id="datacheck" type="checkbox" />Declaro haber leído y aceptar las condiciones
+            generales del programa y la normativa sobre protección de datos.
+            <br />
+            <br />
+            <input type="submit" value="Enviar" onclick="validateForm()" />
+            <input type="reset" value="Borrar" />
+        </form>
+        <script src="../static/js/validar.js" async defer></script>
+</body>
+
+</html>
