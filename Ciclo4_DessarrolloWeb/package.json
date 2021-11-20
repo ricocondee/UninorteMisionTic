@@ -1,0 +1,22 @@
+{
+  "name": "ciclo4_dessarrolloweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "react",
+    "express",
+    "node"
+  ],
+  "author": "ricocondee",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-router-dom": "^6.0.2"
+  }
+}

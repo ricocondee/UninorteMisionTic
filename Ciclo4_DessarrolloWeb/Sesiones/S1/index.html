@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' type='text/CSS' href='estilo.css' />
+        <title>REST Client</title>
+    </head>
+    <body>
+        <div class='container'>
+            <form>
+                <label>Número 1</label>
+                <input id='num1' type='number' />
+                <label>Número 2</label>
+                <input id='num2' type='number' />
+                <input value='Sumar' type='submit' />
+            </form>
+            <div class='result'>Presione para sumar</div>
+        </div>
+        <script>
+            document.addEventListener("submit", enviarDatos)
+
+            function enviarDatos(e) {
+                e.preventDefault()
+                const a = document.getElementById('num1').value
+                const b = document.querySelector('#num2').value
+                fetch("http://localhost:5000/suma", {
+                    method  : "POST",
+                    headers : {
+                        Accept : "application/json", "Content-Type" : "application/json"
+                    },
+                    body: JSON.stringify({
+                        a: parseInt(a),
+                        b: parseInt(b)
+                    })
+                })
+                .then(res => res.json())
+                .then(data => {
+                    const {result} = data
+                    document.querySelector(".result").innerText = `El resultado de la suma es : ${result}`
+                })
+                .catch(err => console.log(err))
+            }
+        </script>
+    </body>
+</html>
