@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<title>{% block title %}{% endblock %}</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/form.css')}}">
+<header>
+    <div class="nav-base">
+        <ul>
+            {% if g.user %}
+            <li><a href="{{ url_for('logout') }}">Cerrar sesion</a></li>
+            {% else %}
+            <li><a href="{{ url_for('register') }}">Registrate</a></li>
+            <li><a href="{{ url_for('login') }}">Iniciar sesion</a></li>
+            {% endif %}
+            <li><a href="{{ url_for('contactos') }}">Contactanos</a></li>
+        </ul>
+    </div>
+</header>
+<section>
+    {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+    {% endfor %}
+</section>
+<h1>Mensajeria</h1>
+{% block content %}
+{% endblock %}

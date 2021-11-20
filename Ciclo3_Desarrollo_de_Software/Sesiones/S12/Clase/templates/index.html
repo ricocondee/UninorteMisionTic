@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/css/form.css">
     <title> Flask App con Bases de datos</title>
 </head>
+
 <body>
-    <h2>App contactos - sqlite3</h2>
- 
-    {% for message in get_flashed_messages() %}
-        <div>{{ message }}</div>
-    {% endfor %}
- 
-    <form action="{{url_for('add_contact')}}" method='POST'>
-        <div>
-            <input type="text" name="fullname" placeholder="Fullname">
-        </div>
-        <div>
-            <input type="text" name="email" placeholder="Email">
-        </div>
-        <div>
-            <input type="text" name="phone" placeholder="Phone">
-        </div><br>
-        <button> Save </button>
+    <section>
+        {% for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+        {% endfor %}
+    </section>
+    <h1>App contactos - sqlite3</h1>
+    <div class="formulario">
+        <form action="{{url_for('add_contact')}}" method='POST'>
+            <div>
+               <label for="fullname">Nombre Completo: </label> <input type="text" id="fullname" name="fullname" placeholder="Fullname">
+            </div>
+            <div>
+               <label for="email">Correo Electronico: </label> <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div>
+               <label for="phone">Telefono: </label> <input type="tel" name="phone" id="phone" placeholder="Phone">
+            </div><br>
+            <button> Save </button>
+            <br>
+        </form>
         <br>
-    </form>
-    <br>
-    <table border="2" cellspacing="">
- 
-        <tr>
-            <th>Id</th>
-            <th>Fullname</th>
-            <th>Email</th>
-            <th>Phone</th>
-        </tr>
-        <table border="2" cellspacing="">
-            <tr>
-              <th>ID</th>
-              <th>FULLNAME</th>
-              <th>EMAIL</th>
-              <th>PHONE</th>
-            </tr>
-            {% for datos in data %}
-            <tr>
-              <td>{{datos[0]}}</td>
-              <td>{{datos[1]}}</td>
-              <td>{{datos[2]}}</td>
-              <td>{{datos[3]}}</td>
-            </tr>
-      
-            {% endfor %}
-          </table>
-    </table>
- 
+            <table border="1" cellspacing="">
+                <tr>
+                    <td>ID</td>
+                    <td>FULLNAME</td>
+                    <td>EMAIL</td>
+                    <td>PHONE</td>
+                    <td colspan="2">Operations</td>
+                </tr>
+                {% for datos in data %}
+                <tr>
+                    <td>{{datos[0]}}</td>
+                    <td>{{datos[1]}}</td>
+                    <td>{{datos[2]}}</td>
+                    <td>{{datos[3]}}</td>
+                    <td><a href="/edit/{{datos[0]}}">Update</a>
+                        <a href="/delete/{{datos[0]}}">Delete</a>
+                    </td>
+                </tr>
+    
+                {% endfor %}
+            </table>
+        </table>
+    </div>
+    
+
 </body>
+
 </html>

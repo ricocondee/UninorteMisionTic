@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/form.css') }}"
+    />
+    <title>Contacto</title>
+  </head>
+  <body>
+    {% block content %}
+    <h1>Contáctenos</h1>
+    <form action="{{ url_for('contactos') }}" id="contactos" name="contactos" method="POST" novalidate>
+      {{ form.hidden_tag() }}
+      <p>
+        {{ form.nombre.label }}<br />
+        {{ form.nombre(size=30)}}<br />
+      </p>
+      <p>
+        {{ form.correo.label }}<br />
+        {{ form.correo(size=30) }}<br />
+      </p>
+      <p>
+        {{ form.mensaje.label }}<br />
+        {{ form.mensaje(size=40)}}<br />
+      </p>
+      <p>{{ form.enviar() }}</p>
+    </form>
+    {% endblock %}
+  </body>
+</html>

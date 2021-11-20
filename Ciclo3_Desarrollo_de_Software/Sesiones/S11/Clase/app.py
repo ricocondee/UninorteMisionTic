@@ -17,7 +17,7 @@ def getArticulo(nombre_art):
     encontrado = [item for item in listaArticulos if item['nombre'] == nombre_art]
 
     if len(encontrado) > 0:
-        return jsonify({'producto':encontrado[0]})
+        return jsonify({'Articulo':encontrado[0]})
 
     else:
         return jsonify({'message': 'Articulo no disponibe'})

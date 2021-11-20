@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block header %}
+
+    <div class="title">
+        <h1>Log In</h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="formulario">
+        <form action="{{ url_for('login') }}" method="POST" name="login">
+            <label>Usuario:</label> <input type="text" id="username" name="username" placeholder="Username" />
+            <br />
+            <br />
+            <label>Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Password" />
+            <div class="showPasswordBtn">
+                <input type="checkbox" name="btn" id="btn" onclick="showPassword()"></input>
+                <label for="btn"></label>
+            </div>
+            <input type="submit" value="Log In" />
+        </form>
+        <script src="../static/js/validar.js" async defer></script>
+{% endblock %}
+</body>
+
+</html>

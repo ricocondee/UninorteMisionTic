@@ -13,15 +13,14 @@ app.config['RECAPTCHA_PRIVATE_KEY'] = '6LeGf7UcAAAAAKH8H4K44i7l8Qnay9KAe8Kz9JFf'
 def form():
     form = login_form()
     if form.validate_on_submit():
-        return f'<h2>El usuario ingresado es: {form.username.data}. La contraseña es {form.password.data}'
+        return f"<h2>El usuario ingresado es: {form.username.data}. La contraseña es {form.password.data}</h2>"
     return render_template('formulario.html', form=form)
 
 class login_form(FlaskForm):
-    
-    username = StringField('username', validators=[InputRequired('El usuario es requerido'), Length(min=5, max=10, message='El usuario debe tener entre 5 y 10 caracteres')])
+    username = StringField('username', validators=[InputRequired('El usuario es requerido'), Length(min=5, max=15, message='El usuario debe tener entre 5 y 10 caracteres')])
     password = PasswordField('password', validators=[InputRequired('El Password es requerido'), AnyOf(values=['pass','secret','xxxxx'], message='Password no válido')])
 
-    recaptcha = RecaptchaField()
+    """ recaptcha = RecaptchaField() """
 
 if __name__ == '__main__':
     app.run(debug=True)

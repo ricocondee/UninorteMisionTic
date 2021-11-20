@@ -6,3 +6,4 @@ __pycache__/
 Lib/
 Scripts/
 Include/
+Ciclo4_DessarrolloWeb/node_modules/*

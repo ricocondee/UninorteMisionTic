@@ -1,0 +1,17 @@
+{% block body %}
+
+    <form action="/update/{{data.0}}" method='POST'>
+        <div>
+            <input type="text" name="fullname" value="{{data.1}}">
+        </div>
+        <div>
+            <input type="text" name="email" value="{{data.2}}">
+        </div>
+        <div>
+            <input type="text" name="phone" value="{{data.3}}">
+        </div><br>
+        <button> Edit </button>
+        <br>
+    </form>
+
+{% endblock %}
